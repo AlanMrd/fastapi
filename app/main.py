@@ -13,10 +13,6 @@ class Post(BaseModel):
 my_posts = [{"title": "title of post 1", "content": "content of post1", "id": "1"},
             {"title": "title of post 2", "content": "content of post2", "id": "2"}]
 
-
-conn = psycopg2.connect(host="localhost", dbname="fastapi", user="postgres", password="123456")
-cursor = conn.cursor()
-
 def find_post(id):
     for post in my_posts:
         if id == post["id"]:
