@@ -1,0 +1,102 @@
+2021-11-08 16:12:15.523 -03 [18416] LOG:  starting PostgreSQL 14.0, compiled by Visual C++ build 1914, 64-bit
+2021-11-08 16:12:15.548 -03 [18416] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2021-11-08 16:12:15.548 -03 [18416] LOG:  listening on IPv6 address "::1", port 5432
+2021-11-08 16:12:16.251 -03 [42900] LOG:  database system was interrupted; last known up at 2021-11-07 19:51:37 -03
+2021-11-08 16:12:31.363 -03 [42900] LOG:  database system was not properly shut down; automatic recovery in progress
+2021-11-08 16:12:31.377 -03 [42900] LOG:  redo starts at 0/17BD780
+2021-11-08 16:12:31.378 -03 [42900] LOG:  invalid record length at 0/17BD868: wanted 24, got 0
+2021-11-08 16:12:31.378 -03 [42900] LOG:  redo done at 0/17BD830 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2021-11-08 16:12:31.930 -03 [18416] LOG:  database system is ready to accept connections
+2021-11-08 16:21:03.265 -03 [5448] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 16:21:35.312 -03 [38024] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 16:45:16.156 -03 [12200] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 16:51:21.825 -03 [160] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 16:51:45.457 -03 [30500] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 16:52:21.592 -03 [27852] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 16:56:54.487 -03 [24688] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 17:00:07.309 -03 [42344] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 17:01:07.122 -03 [35556] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 17:02:56.812 -03 [27276] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 17:03:13.645 -03 [11444] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 18:04:51.732 -03 [23828] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 18:13:07.073 -03 [41052] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 18:16:38.247 -03 [11028] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 18:16:45.576 -03 [31960] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 18:19:16.798 -03 [24140] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 18:19:44.747 -03 [22312] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 18:20:06.552 -03 [40912] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 18:20:33.874 -03 [39460] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 18:21:26.484 -03 [43216] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 18:48:03.538 -03 [7008] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 18:48:30.114 -03 [31996] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 18:52:30.264 -03 [43732] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 18:56:00.587 -03 [11236] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 18:56:16.138 -03 [36748] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 18:56:33.592 -03 [6320] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 18:56:47.533 -03 [40196] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 19:06:26.171 -03 [17532] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 19:08:22.824 -03 [35200] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 19:33:28.366 -03 [19672] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 19:34:05.695 -03 [41964] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 19:38:02.383 -03 [25508] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 19:39:37.581 -03 [17120] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 19:41:00.987 -03 [31592] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 19:49:53.083 -03 [38816] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 19:50:20.092 -03 [42344] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 19:55:08.621 -03 [10860] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 19:55:54.222 -03 [36296] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 19:56:46.560 -03 [7464] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 21:57:53.961 -03 [35620] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 21:58:06.146 -03 [38608] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 21:58:17.651 -03 [43936] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 21:58:29.023 -03 [33916] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 21:58:48.935 -03 [19180] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 21:59:12.536 -03 [28224] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 22:04:47.263 -03 [39476] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 22:16:47.020 -03 [34868] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 22:17:56.698 -03 [31836] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 22:30:41.373 -03 [11664] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 22:30:56.888 -03 [21828] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 22:31:25.427 -03 [25504] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-08 22:31:36.130 -03 [34760] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 09:37:21.454 -03 [25064] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 09:37:39.470 -03 [41300] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 09:37:52.655 -03 [28172] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 09:38:21.825 -03 [2480] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 14:21:29.109 -03 [34128] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 14:23:16.843 -03 [26168] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 14:25:00.406 -03 [41744] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 14:29:52.035 -03 [31048] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 14:30:03.283 -03 [43400] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 14:30:28.519 -03 [37032] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 14:35:54.937 -03 [43528] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 14:36:09.458 -03 [40276] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 14:37:25.093 -03 [27812] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 14:39:26.866 -03 [15860] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 14:41:02.999 -03 [41420] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 14:43:37.632 -03 [24092] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 14:44:57.527 -03 [25232] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 14:45:55.621 -03 [38400] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 14:46:06.116 -03 [42864] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 14:46:22.324 -03 [42832] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 14:48:11.336 -03 [42816] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 14:49:25.510 -03 [34640] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 14:49:35.006 -03 [34780] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 14:52:21.540 -03 [16564] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 14:54:09.390 -03 [24140] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 14:55:36.813 -03 [39400] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 14:56:12.231 -03 [45024] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 14:56:23.831 -03 [36016] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 14:56:52.185 -03 [25860] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 14:57:36.111 -03 [43804] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 15:04:28.357 -03 [28516] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 15:04:56.104 -03 [25196] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 15:05:07.379 -03 [5072] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 15:06:11.558 -03 [11244] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 15:12:07.557 -03 [45680] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-09 22:05:45.472 -03 [46656] LOG:  could not receive data from client: unrecognized winsock error 10054
+2021-11-10 09:33:57.864 -03 [18416] LOG:  server process (PID 5204) was terminated by exception 0x40010004
+2021-11-10 09:33:57.864 -03 [18416] DETAIL:  Failed process was running: SELECT oid, pg_catalog.format_type(oid, NULL) AS typname FROM pg_catalog.pg_type WHERE oid IN (23, 1043, 1043, 1184) ORDER BY oid;
+2021-11-10 09:33:57.864 -03 [18416] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2021-11-10 09:33:57.864 -03 [18416] LOG:  terminating any other active server processes
+2021-11-10 09:34:00.308 -03 [18416] LOG:  all server processes terminated; reinitializing
