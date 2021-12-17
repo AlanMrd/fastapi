@@ -3,8 +3,8 @@ from typing import Optional
 from pydantic import BaseModel, EmailStr
 from typing import Optional
 
+from pydantic.types import conint
 from app.database import Base
-
 
 class PostBase(BaseModel):
     title: str
@@ -14,20 +14,6 @@ class PostBase(BaseModel):
 class PostCreate(PostBase):
     pass
 
-class Post(BaseModel):
-    title: str
-    content: str
-    published: bool = True
-    created_at: datetime
-    owner_id: int
-
-    class Config:
-        orm_mode = True
-
-class UserCreate(BaseModel):
-    email: EmailStr
-    password: str
-
 class User(BaseModel):
     id: int
     email: EmailStr
@@ -35,6 +21,27 @@ class User(BaseModel):
 
     class Config:
         orm_mode = True
+
+class Post(BaseModel):
+    title: str
+    content: str
+    published: bool = True
+    created_at: datetime
+    owner: User
+
+    class Config:
+        orm_mode = True
+
+class PostOut(BaseModel):
+    Post: Post
+    votes: int
+    
+    class Config:
+        orm_mode = True
+
+class UserCreate(BaseModel):
+    email: EmailStr
+    password: str
 
 class UserLogin(BaseModel):
     email: EmailStr
@@ -46,3 +53,8 @@ class Token(BaseModel):
 
 class TokenData(BaseModel):
     id: Optional[int]
+
+class Vote(BaseModel):
+    post_id: int
+    dir: conint(le=1)
+
