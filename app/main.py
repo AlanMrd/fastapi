@@ -9,7 +9,7 @@ models.Base.metadata.create_all(bind=engine)
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://www.google.com.br"],
+    allow_origins=["https://www.google.com.br", "https://www.youtue.com"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
