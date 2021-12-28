@@ -1,15 +1,31 @@
 version: "3"
 services:
-  api: 
+  api:
     build: .
+    depends_on:
+      - postgres
     ports:
       - 8080:8080
+    volumes:
+      - ./:/usr/src/main:ro
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8080 --reload
     environment:
-      - DATABASE_HOSTNAME=localhost
+      - DATABASE_HOSTNAME=postgres
       - DATABASE_PORT=5432
       - DATABASE_PASSWORD=123456
       - DATABASE_NAME=fastapi
       - DATABASE_USERNAME=postgres
       - SECRET_KEY=2cfe3f70f7daf95bdbd75fbc5facdd5e5932bc25d233e623732e7a1f5a419052
       - ALGORITHM=HS256
-      - ACCESS_TOKEN_EXPIRE_MINUTES=30  
+      - ACCESS_TOKEN_EXPIRE_MINUTES=30
+
+  postgres:
+    image: postgres
+    environment:
+      - POSTGRES_PASSWORD=123456
+      - POSTGRES_DB=fastapi
+    volumes:
+      - postgres-db:/var/lib/postgresql/data
+
+volumes:
+  postgres-db:
