@@ -12,7 +12,7 @@ def login(user_credentials: OAuth2PasswordRequestForm = Depends(), db: Session =
     user = db.query(models.User).filter(models.User.email == user_credentials.username).first()
 
     if user is None:
-        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail=f"The user {user_credentials.email} doesn't exist")
+        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail=f"The user {user_credentials.username} doesn't exist")
     
     if not utils.verify(user_credentials.password, user.password):
         raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail=f"The password is wrong")
