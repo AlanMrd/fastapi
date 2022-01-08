@@ -3,6 +3,7 @@ name: CI/CD FastAPI
 on: [push]
 
 jobs:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: checkout de branch
