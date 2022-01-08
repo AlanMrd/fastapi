@@ -7,7 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout de branch
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
+      - name: setup python with verion 3.8 
         uses: actions/setup-python@v2
         with:
           python-version: 3.8
