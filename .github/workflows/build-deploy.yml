@@ -3,8 +3,7 @@ name: CI/CD FastAPI
 on: [push]
 
 jobs:
-  build:
-
+  ci:
     environment: 
       name: testing
 
@@ -50,25 +49,33 @@ jobs:
           pip install -r requirements.txt
           pytest
       
-      - name: create docker image
-        uses: docker/login-action@v1
-        with:
-          username: ${{ secrets.DOCKER_HUB_USERNAME }}
-          password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+      # - name: create docker image
+      #   uses: docker/login-action@v1
+      #   with:
+      #     username: ${{ secrets.DOCKER_HUB_USERNAME }}
+      #     password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
 
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v1
+      # - name: Set up Docker Buildx
+      #   uses: docker/setup-buildx-action@v1
       
-      - name: Build and push
-        uses: docker/build-push-action@v2
+      # - name: Build and push
+      #   uses: docker/build-push-action@v2
+      #   with:
+      #     context: ./
+      #     file: ./Dockerfile
+      #     builder: ${{ steps.buildx.outputs.name }}
+      #     push: true
+      #     tags: ${{ secrets.DOCKER_HUB_USERNAME }}/fastapi:latest
+      #     cache-from: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/fastapi:buildcache
+      #     cache-to: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/fastapi:buildcache,mode=max
+
+  cd:
+    needs: [ci]
+    - uses: akhileshns/heroku-deploy@v3.12.12
         with:
-          context: ./
-          file: ./Dockerfile
-          builder: ${{ steps.buildx.outputs.name }}
-          push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/fastapi:latest
-          cache-from: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/fastapi:buildcache
-          cache-to: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/fastapi:buildcache,mode=max
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "fastapi-alanmrd"
+          heroku_email: "alan.mrd90@gmail.com"
 
 
       
