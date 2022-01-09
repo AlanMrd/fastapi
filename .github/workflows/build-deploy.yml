@@ -70,6 +70,9 @@ jobs:
       #     cache-to: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/fastapi:buildcache,mode=max
 
   cd:
+    environment:
+      - name: production
+
     runs-on: ubuntu-latest
     needs: [ci]
 
@@ -80,4 +83,16 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "fastapi-alanmrd"
           heroku_email: "alan.mrd90@gmail.com"
+
+      - name: executing remote ssh commands using password
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: 22
+        script: |
+        cd app/src
+        git pull
+        sudo systemctl restart fastapi 
       
